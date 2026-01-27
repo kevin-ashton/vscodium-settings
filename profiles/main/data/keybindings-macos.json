@@ -73,11 +73,11 @@
   // Fun commands
   // ================
 
-  {
-    "key": "f3",
-    "command": "emoji.insert",
-    "when": "editorTextFocus"
-  },
+  // {
+  //   "key": "f3",
+  //   "command": "emoji.insert",
+  //   "when": "editorTextFocus"
+  // },
   {
     "key": "cmd+k",
     "command": "editor.action.insertSnippet",
@@ -401,20 +401,6 @@
     }
   },
 
-  // ############################
-  // # Select
-  // ############################
-
-  // Select current string
-  {
-    "key": "alt+;",
-    "command": "quickSelect.cursorQuoteSelect"
-  },
-  {
-    "key": "alt+'",
-    "command": "expand_region",
-    "when": "editorTextFocus"
-  },
 
   // ############################
   // # Search in local files
@@ -491,42 +477,6 @@
     "command": "revealInExplorer"
   },
 
-  // ================
-  // Set Fold Levels
-  // ================
-
-  {
-    "key": "ctrl+shift+alt+6",
-    "command": "vikyd.FoldLevel.level1",
-    "when": "editorTextFocus"
-  },
-
-  {
-    "key": "ctrl+shift+alt+7",
-    "command": "vikyd.FoldLevel.level2",
-    "when": "editorTextFocus"
-  },
-
-  {
-    "key": "ctrl+shift+alt+8",
-    "command": "vikyd.FoldLevel.level3",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+alt+9",
-    "command": "vikyd.FoldLevel.level4",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+alt+0",
-    "command": "vikyd.FoldLevel.level5",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+alt+-",
-    "command": "vikyd.FoldLevel.level6",
-    "when": "editorTextFocus"
-  },
 
   // ############################
   // # Folding

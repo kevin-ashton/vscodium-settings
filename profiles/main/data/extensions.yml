@@ -24,12 +24,16 @@ enabled:
     uuid: 445ba381-f232-4150-9056-d790bd76d698
   - id: Kelvin.vscode-sshfs
     uuid: bb9fc30a-080a-40bc-a792-08cc4ed66bcd
+  - id: kevin-ashton.vsc-nanoid-snippets
+    uuid: null
   - id: matthewpi.caddyfile-support
     uuid: c1d1ec36-b62e-4046-b2e6-0e49df95a9f8
   - id: prettier.prettier-vscode
     uuid: baa185f3-22aa-4a14-ac21-5c421de53415
   - id: Prisma.prisma
     uuid: 33ce9d6b-41cf-4972-a62b-386f7201981d
+  - id: rebornix.toggle
+    uuid: null
   - id: redhat.vscode-yaml
     uuid: 2061917f-f76a-458a-8da9-f162de22b97e
   - id: ryuta46.multi-command
