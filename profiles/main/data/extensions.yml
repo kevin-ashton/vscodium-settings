@@ -1,0 +1,48 @@
+disabled: []
+enabled:
+  - id: Anthropic.claude-code
+    uuid: 3c13ae49-babe-45fe-8c48-5e45077a62bf
+  - id: ardonplay.vscode-jetbrains-icon-theme
+    uuid: 96b279e1-e30f-4d34-bad2-f1a5f5e314dc
+  - id: astro-build.astro-vscode
+    uuid: 1fbbc8b0-7432-4b7e-8774-3336151da2f3
+  - id: bradlc.vscode-tailwindcss
+    uuid: 4db62a7c-7d70-419c-96d2-6c3a4dc77ea5
+  - id: daywards.firecode
+    uuid: e5e5a830-6a5f-446e-a824-ef8c2592263d
+  - id: dbaeumer.vscode-eslint
+    uuid: 583b2b34-2c1e-4634-8c0b-0b82e283ea3a
+  - id: donjayamanne.githistory
+    uuid: 5960f38e-0bbe-4644-8f9c-9c8824e82511
+  - id: EditorConfig.EditorConfig
+    uuid: f60a60a6-95ba-42d4-b41c-3d24c1b89588
+  - id: expo.vscode-expo-tools
+    uuid: b2c4b5bf-9bda-4c81-96b6-d2f28401c4fb
+  - id: johnpapa.vscode-peacock
+    uuid: 5a7017bf-c571-4d77-b902-6e56b16f539a
+  - id: kamikillerto.vscode-colorize
+    uuid: 445ba381-f232-4150-9056-d790bd76d698
+  - id: Kelvin.vscode-sshfs
+    uuid: bb9fc30a-080a-40bc-a792-08cc4ed66bcd
+  - id: matthewpi.caddyfile-support
+    uuid: c1d1ec36-b62e-4046-b2e6-0e49df95a9f8
+  - id: prettier.prettier-vscode
+    uuid: baa185f3-22aa-4a14-ac21-5c421de53415
+  - id: Prisma.prisma
+    uuid: 33ce9d6b-41cf-4972-a62b-386f7201981d
+  - id: redhat.vscode-yaml
+    uuid: 2061917f-f76a-458a-8da9-f162de22b97e
+  - id: ryuta46.multi-command
+    uuid: a92437f6-75af-47b2-b3e0-99764308b4be
+  - id: streetsidesoftware.code-spell-checker
+    uuid: f6dbd813-b0a0-42c1-90ea-10dde9d925a7
+  - id: unifiedjs.vscode-mdx
+    uuid: af8cfc85-cb72-45d0-bae2-9a98cd0c69f3
+  - id: waderyan.gitblame
+    uuid: 2335b326-c334-4e81-bc51-c408fcec6e7c
+  - id: YuTengjing.open-in-external-app
+    uuid: 42a19d78-8550-49db-958b-561a7bfdee7d
+  - id: yzhang.markdown-all-in-one
+    uuid: 98790d67-10fa-497c-9113-f6c7489207b2
+  - id: zokugun.cron-tasks
+    uuid: b7bbbbd5-7a39-4312-87aa-ef6a41de67fb

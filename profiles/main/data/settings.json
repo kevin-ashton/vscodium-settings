@@ -1,0 +1,449 @@
+{
+  // Insiders tweaks (since we share them)
+  // - change "workbench.list.openMode" to "singleClick"
+  // - uncomment "Instance sidebar preview" in keyboard shortcuts
+  //
+
+
+  // Allow you to select a folder without toggling it
+  "workbench.list.openMode": "doubleClick",
+
+  // Allow instant previews on a file as you use your arrow keys
+  // https://stackoverflow.com/questions/46853186/instantly-open-files-when-navigating-the-file-explorer-with-arrow-keys-in-vscode/66237216#66237216
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.navigateExplorerDownAndPreviewFile",
+      "sequence": ["list.focusDown", "filesExplorer.openFilePreserveFocus"]
+    },
+    {
+      "command": "multiCommand.navigateExplorerUpAndPreviewFile",
+      "sequence": ["list.focusUp", "filesExplorer.openFilePreserveFocus"]
+    }
+  ],
+
+
+  // I want vanilla zsh, not "smart" features
+  "terminal.integrated.shellIntegration.enabled": false,
+
+
+  "markdown.copyFiles.destination": {
+    "**/*": "images/${documentBaseName}/"
+  },
+
+  "Prettier-SQL.denseOperators": true,
+
+  "insertDateString.format": "MMM D, YYYY - DDDD",
+
+  "emmet.showExpandedAbbreviation": "never",
+  "emmet.triggerExpansionOnTab": true,
+
+  "nanoid-snippets.snip0": "__NANOID__",
+  "nanoid-snippets.snip1": "L.dev($1,'__NANOID__')$0",
+  "nanoid-snippets.snip2": "try {\n $4\n } catch(e) {\n throw L.appendToErrorEnsureEventuallyLogged({error: e, addStack: { message: '$1', lid: '__NANOID__', meta: {${3}}}})\n}",
+  "nanoid-snippets.snip3": "throw L.createErrorEnsureEventuallyLogged({message: '$1', lid: '__NANOID__', meta: {$2}})",
+  "nanoid-snippets.snip4": "console.log($1,'__NANOID__')$0",
+  "nanoid-snippets.snip5": "\"__NANOID__\"",
+  "nanoid-snippets.snip6": "\nconsole.log(\"__HOURS_MINUTES_SECONDS__ __NANOID__  DELETE_HMS\")",
+
+  "cSpell.userWords": ["dir", "Gamified", "Jens", "Karoline", "Macbook"],
+  "editor.fontSize": 16,
+  "terminal.integrated.fontSize": 11,
+  "terminal.integrated.scrollback": 20000,
+  "editor.lineNumbers": "on",
+
+  "editor.renameOnType": true,
+  "window.confirmBeforeClose": "keyboardOnly",
+
+  // Allow snippets to have suggestions
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+  // Show problems in status bar
+  "problems.showCurrentInStatus": true,
+
+  "clock.dateFormat": "mmm dd, hh:MM TT",
+  "explorer.confirmDelete": false,
+
+  // Mini-map
+  "editor.minimap.enabled": false,
+  // "editor.minimap.showSlider": "always",
+  // "editor.minimap.renderCharacters": true,
+  "editor.minimap.maxColumn": 60,
+
+  "terminal.integrated.cursorBlinking": true,
+  // When you have text selected and you scroll it keeps it from bumping the bottom
+  "editor.cursorSurroundingLines": 4,
+
+  "editor.wordWrap": "on",
+  "editor.quickSuggestionsDelay": 0,
+  "editor.lineHeight": 0,
+  // Get rid of annoying list of open files in the sidebar (why have that when you already have tabs?)
+  "explorer.openEditors.visible": 0,
+  // Sidebar
+  "explorer.confirmDragAndDrop": false,
+
+  // Problem is if we disable this we loose 'number' | 'string' etc in typescript
+  // Remove language specific keywords from intelisense
+  // "editor.suggest.filteredTypes": {
+  //     "keyword": false
+  // },
+  "editor.suggestSelection": "first",
+
+  // Does it show suggestions when you type
+  "editor.quickSuggestions": {
+    "comments": "on",
+    "strings": "on",
+    "other": "on"
+  },
+  "editor.renderWhitespace": "none",
+  // Always use the json version of the settings
+  "workbench.settings.editor": "json",
+  // Controls if the explorer should automatically reveal and select files when opening them.
+  "explorer.autoReveal": false,
+  // Get rid of those annoying recommendations telling you to install x, y, and z
+  "extensions.ignoreRecommendations": true,
+  // Put snippits on top of suggestions. Kind of annoying since
+  // "editor.snippetSuggestions": "top",
+  "files.trimTrailingWhitespace": true,
+  // Disable some autodetect stuff
+  "typescript.tsc.autoDetect": "off",
+  "npm.autoDetect": "off",
+  "grunt.autoDetect": "off",
+  "jake.autoDetect": "off",
+  "gulp.autoDetect": "off",
+  "search.mode": "view",
+  "search.exclude": {
+    "**/app.bundle": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/Pods": true,
+    "**/dist/**": true
+  },
+
+  // Line endings
+  "files.eol": "\n",
+  // Enable per-language settings
+
+  // Make it so each window stays open
+  // "workbench.editor.enablePreview": false,
+  // Files opened with cmd+o will remain open (no longer put into preview state that requires an edit)
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  // "typescript.preferences.importModuleSpecifierEnding": "js",
+  // Autosave
+  "files.autoSave": "onFocusChange",
+  // Default hide/exclude
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.dropbox": true,
+    "**/.idea": true,
+    "**/.cache": true,
+    "**/*.js.map": true,
+    "**/*.ts.map": true,
+    // "**/*.d.ts": true,
+    "**/yarn-error.log": true
+  },
+
+  // Peacock settings
+  "peacock.affectActivityBar": true,
+  "peacock.affectTitleBar": true,
+  "peacock.favoriteColors": [
+    {
+      "name": "Angular Red",
+      "value": "#dd0531"
+    },
+    {
+      "name": "Azure Blue",
+      "value": "#007fff"
+    },
+    {
+      "name": "JavaScript Yellow",
+      "value": "#f9e64f"
+    },
+    {
+      "name": "Mandalorian Blue",
+      "value": "#1857a4"
+    },
+    {
+      "name": "Node Green",
+      "value": "#215732"
+    },
+    {
+      "name": "React Blue",
+      "value": "#61dafb"
+    },
+    {
+      "name": "Something Different",
+      "value": "#832561"
+    },
+    {
+      "name": "Svelte Orange",
+      "value": "#ff3d00"
+    },
+    {
+      "name": "Vue Green",
+      "value": "#42b883"
+    },
+    {
+      "name": "Auth0 Orange",
+      "value": "#eb5424"
+    },
+    {
+      "name": "C# Purple",
+      "value": "#68217A"
+    },
+    {
+      "name": "Gatsby Purple",
+      "value": "#639"
+    },
+    {
+      "name": "Go Cyan",
+      "value": "#5dc9e2"
+    },
+    {
+      "name": "Java Blue-Gray",
+      "value": "#557c9b"
+    }
+  ],
+
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "*.deprecated": { "strikethrough": false, "foreground": "#9aa0a6" } // dim, no line
+    }
+  },
+
+  // "editor.suggestOnTriggerCharacters": false,
+  // Get rid of annoying autocomplete when you type `if` and then goes to `ifStatement()`
+  //https://stackoverflow.com/questions/32911977/prevent-autocomplete-in-visual-studio-code
+  "editor.acceptSuggestionOnCommitCharacter": false,
+
+
+
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "workbench.tree.indent": 20,
+  // https://code.visualstudio.com/api/references/theme-color#editor-colors
+  "workbench.colorCustomizations": {
+    "[Blue Light Theme]": {
+      "editorError.foreground": "#f14949",
+      "terminal.ansiRed": "#b73c3c"
+
+      // "editor.wordHighlightBackground": "#fff200"
+    }
+  },
+
+
+  "editor.tokenColorCustomizations": {
+    "[Default Light+]": {
+      "textMateRules": [
+        // "scope": ["markup","markup.bold","markup.changed","markup.deleted","markup.heading","markup.inline.raw","markup.inserted","markup.italic","markup.list","markup.list.numbered","markup.list.unnumbered","markup.other","markup.quote","markup.raw","markup.underline","markup.underline.link"],
+        {
+          "scope": "markup.bold",
+          "settings": {
+            "foreground": "#e13416",
+            "fontStyle": "underline"
+          }
+        },
+        {
+          "scope": "markup.italic",
+          "settings": {
+            "foreground": "#1198e7",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "markup.heading",
+          "settings": {
+            "foreground": "#e2a807",
+            "fontStyle": ""
+          }
+        },
+
+        {
+          "scope": "markup.quote",
+          "settings": {
+            "foreground": "#2cc77c",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "markup.strikethrough.markdown",
+          "settings": {
+            "foreground": "#aca83f",
+            "fontStyle": ""
+          }
+        }
+      ]
+    },
+    "[Default Dark Modern]": {
+      "textMateRules": [
+        // "scope": ["markup","markup.bold","markup.changed","markup.deleted","markup.heading","markup.inline.raw","markup.inserted","markup.italic","markup.list","markup.list.numbered","markup.list.unnumbered","markup.other","markup.quote","markup.raw","markup.underline","markup.underline.link"],
+        {
+          "scope": "markup.bold",
+          "settings": {
+            "foreground": "#ff7777",
+            "fontStyle": "underline"
+          }
+        },
+        {
+          "scope": "markup.italic",
+          "settings": {
+            "foreground": "#5eb9ee",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "markup.heading",
+          "settings": {
+            "foreground": "#f3d37c",
+            "fontStyle": ""
+          }
+        },
+
+        {
+          "scope": "markup.quote",
+          "settings": {
+            "foreground": "#69ca9b",
+            "fontStyle": ""
+          }
+        },
+        {
+          "scope": "markup.strikethrough.markdown",
+          "settings": {
+            "foreground": "#676533",
+            "fontStyle": ""
+          }
+        }
+      ]
+    }
+  },
+
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "search.showLineNumbers": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "files.associations": {
+    "*.plist": "xml",
+    "*.txt": "markdown",
+    "*.yml ": "yaml"
+  },
+
+  "editor.accessibilitySupport": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "hediet.vscode-drawio.resizeImages": null,
+  "workbench.statusBar.visible": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "webstorm-icons",
+
+  "peacock.vslsJoinColor": "#f9e64f",
+
+  "prisma.showPrismaDataPlatformNotification": false,
+  "cSpell.enabled": false,
+  "explorer.confirmPasteNative": false,
+  "redhat.telemetry.enabled": false,
+  "git.openRepositoryInParentFolders": "never",
+  "[plaintext]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "sshfs.configs": [
+    {
+      "name": "api-prod-staging",
+      "privateKeyPath": "/Users/kevin/.ssh/id_rsa",
+      "username": "root",
+      "host": "3.150.58.70"
+    },
+    {
+      "name": "roo-pipe",
+      "privateKeyPath": "/Users/kevin/.ssh/id_rsa",
+      "username": "root",
+      "host": "3.135.190.89"
+    }
+  ],
+  "window.newWindowProfile": "Default",
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Tweak AI
+  "update.showReleaseNotes": false,
+  "chat.commandCenter.enabled": false,
+  "chat.agent.enabled": false,
+  "chat.mcp.gallery.enabled": false,
+  "chat.detectParticipant.enabled": false,
+
+  // Remove sending any data to Microsoft
+  "telemetry.telemetryLevel": "off",
+  "workbench.enableExperiments": false,
+  "cSpell.enabledNotifications": {
+    "Average Word Length too Long": false,
+    "Lines too Long": false,
+    "Maximum Word Length Exceeded": false
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Default Light+",
+"workbench.settings.showAISearchToggle": false,
+"claudeCode.preferredLocation": "panel"
+
+  // Add some custom styles to markdown. Was playing with this when I was looking at using vsCode for the scriptures
+  // See https://code.visualstudio.com/docs/getstarted/themes
+  // https://github.com/Microsoft/vscode/issues/32579
+  // "editor.tokenColorCustomizations": {
+  //     "textMateRules": [
+  //         // "scope": ["markup","markup.bold","markup.changed","markup.deleted","markup.heading","markup.inline.raw","markup.inserted","markup.italic","markup.list","markup.list.numbered","markup.list.unnumbered","markup.other","markup.quote","markup.raw","markup.underline","markup.underline.link"],
+  //         {
+  //             "scope": "markup.bold",
+  //             "settings": {
+  //                 "foreground": "#2668f5",
+  //                 "fontStyle": "bold"
+  //             }
+  //         },
+  //         {
+  //             "scope": "markup.heading",
+  //             "settings": {
+  //                 "foreground": "#717cc1",
+  //                 "fontStyle": "bold"
+  //             }
+  //         }
+  //     ]
+  // }
+}
