@@ -24,6 +24,8 @@ enabled:
     uuid: 445ba381-f232-4150-9056-d790bd76d698
   - id: Kelvin.vscode-sshfs
     uuid: bb9fc30a-080a-40bc-a792-08cc4ed66bcd
+  - id: kevin-ashton.vsc-encrypt-file-with-env-variables
+    uuid: null
   - id: kevin-ashton.vsc-nanoid-snippets
     uuid: null
   - id: matthewpi.caddyfile-support
@@ -36,6 +38,8 @@ enabled:
     uuid: null
   - id: redhat.vscode-yaml
     uuid: 2061917f-f76a-458a-8da9-f162de22b97e
+  - id: rid9.datetime
+    uuid: 7b69248c-488a-4a74-ae29-56822156726f
   - id: ryuta46.multi-command
     uuid: a92437f6-75af-47b2-b3e0-99764308b4be
   - id: streetsidesoftware.code-spell-checker

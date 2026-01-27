@@ -1110,5 +1110,9 @@
     "key": "ctrl+tab",
     "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
     "when": "inEditorsPicker && inQuickOpen"
+  },
+  {
+    "key": "f3",
+    "command": "claudeVSCodeSidebarSecondary.focus"
   }
 ]

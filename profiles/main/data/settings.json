@@ -30,10 +30,6 @@
     "**/*": "images/${documentBaseName}/"
   },
 
-  "Prettier-SQL.denseOperators": true,
-
-  "insertDateString.format": "MMM D, YYYY - DDDD",
-
   "emmet.showExpandedAbbreviation": "never",
   "emmet.triggerExpansionOnTab": true,
 
@@ -342,7 +338,7 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.iconTheme": "webstorm-icons",
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
 
   "peacock.vslsJoinColor": "#f9e64f",
 
