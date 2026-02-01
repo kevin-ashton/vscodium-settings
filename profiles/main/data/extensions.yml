@@ -6,6 +6,8 @@ enabled:
     uuid: 96b279e1-e30f-4d34-bad2-f1a5f5e314dc
   - id: astro-build.astro-vscode
     uuid: 1fbbc8b0-7432-4b7e-8774-3336151da2f3
+  - id: bierner.emojisense
+    uuid: 081cd2e9-bc51-4ea3-977e-544bed2e33a8
   - id: bradlc.vscode-tailwindcss
     uuid: 4db62a7c-7d70-419c-96d2-6c3a4dc77ea5
   - id: daywards.firecode
@@ -16,8 +18,12 @@ enabled:
     uuid: 5960f38e-0bbe-4644-8f9c-9c8824e82511
   - id: EditorConfig.EditorConfig
     uuid: f60a60a6-95ba-42d4-b41c-3d24c1b89588
+  - id: esbenp.prettier-vscode
+    uuid: 96fa4707-6983-4489-b7c5-d5ffdfdcce90
   - id: expo.vscode-expo-tools
     uuid: b2c4b5bf-9bda-4c81-96b6-d2f28401c4fb
+  - id: ginfuru.ginfuru-better-solarized-dark-theme
+    uuid: c47db04d-78f4-45b5-a824-73d9f20efc78
   - id: johnpapa.vscode-peacock
     uuid: 5a7017bf-c571-4d77-b902-6e56b16f539a
   - id: kamikillerto.vscode-colorize
@@ -25,17 +31,21 @@ enabled:
   - id: Kelvin.vscode-sshfs
     uuid: bb9fc30a-080a-40bc-a792-08cc4ed66bcd
   - id: kevin-ashton.vsc-encrypt-file-with-env-variables
-    uuid: null
+    uuid: 4f27872b-4421-4645-b5ee-7ae37ab67ae7
   - id: kevin-ashton.vsc-nanoid-snippets
-    uuid: null
+    uuid: 5de841b5-b4f5-4977-997c-d2a806198e75
+  - id: mathiasfrohlich.Kotlin
+    uuid: d36bad53-910d-481a-a7ee-8992450665f6
   - id: matthewpi.caddyfile-support
     uuid: c1d1ec36-b62e-4046-b2e6-0e49df95a9f8
-  - id: prettier.prettier-vscode
-    uuid: baa185f3-22aa-4a14-ac21-5c421de53415
   - id: Prisma.prisma
     uuid: 33ce9d6b-41cf-4972-a62b-386f7201981d
+  - id: PutraAdiJaya.emoji-game-matcher
+    uuid: 40158729-c631-499d-96a8-1d3951d46f84
   - id: rebornix.toggle
     uuid: null
+  - id: redhat.java
+    uuid: 198a707e-28af-4e84-8610-6e2f628dd12d
   - id: redhat.vscode-yaml
     uuid: 2061917f-f76a-458a-8da9-f162de22b97e
   - id: rid9.datetime

@@ -21,7 +21,6 @@
     }
   ],
 
-
   // I want vanilla zsh, not "smart" features
   "terminal.integrated.shellIntegration.enabled": false,
 
@@ -364,7 +363,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "sshfs.configs": [
     {
@@ -416,9 +415,9 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Default Light+",
 "workbench.settings.showAISearchToggle": false,
-"claudeCode.preferredLocation": "panel"
+"claudeCode.preferredLocation": "panel",
+"workbench.colorTheme": "Default Light+"
 
   // Add some custom styles to markdown. Was playing with this when I was looking at using vsCode for the scriptures
   // See https://code.visualstudio.com/docs/getstarted/themes
