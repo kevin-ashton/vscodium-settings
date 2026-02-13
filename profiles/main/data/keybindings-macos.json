@@ -73,11 +73,11 @@
   // Fun commands
   // ================
 
-  // {
-  //   "key": "f3",
-  //   "command": "emoji.insert",
-  //   "when": "editorTextFocus"
-  // },
+  {
+    "key": "f3",
+    "command": "emojisense.quickEmoji",
+    "when": "editorTextFocus"
+  },
   {
     "key": "cmd+k",
     "command": "editor.action.insertSnippet",
@@ -1111,8 +1111,5 @@
     "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
     "when": "inEditorsPicker && inQuickOpen"
   },
-  {
-    "key": "f3",
-    "command": "claudeVSCodeSidebarSecondary.focus"
-  }
+
 ]

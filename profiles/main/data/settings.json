@@ -5,6 +5,8 @@
   //
 
 
+  // "editor.renderControlCharacters": true,
+
   // Allow you to select a folder without toggling it
   "workbench.list.openMode": "doubleClick",
 
@@ -72,7 +74,7 @@
   "editor.quickSuggestionsDelay": 0,
   "editor.lineHeight": 0,
   // Get rid of annoying list of open files in the sidebar (why have that when you already have tabs?)
-  "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 20,
   // Sidebar
   "explorer.confirmDragAndDrop": false,
 
@@ -417,7 +419,10 @@
   },
 "workbench.settings.showAISearchToggle": false,
 "claudeCode.preferredLocation": "panel",
-"workbench.colorTheme": "Default Light+"
+"workbench.colorTheme": "Default Light+",
+"[yaml]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
 
   // Add some custom styles to markdown. Was playing with this when I was looking at using vsCode for the scriptures
   // See https://code.visualstudio.com/docs/getstarted/themes
