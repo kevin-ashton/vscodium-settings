@@ -24,6 +24,8 @@ enabled:
     uuid: b2c4b5bf-9bda-4c81-96b6-d2f28401c4fb
   - id: ginfuru.ginfuru-better-solarized-dark-theme
     uuid: c47db04d-78f4-45b5-a824-73d9f20efc78
+  - id: jeanp413.open-remote-ssh
+    uuid: 9fc16cea-08e2-4ae5-bf75-224004d722ff
   - id: johnpapa.vscode-peacock
     uuid: 5a7017bf-c571-4d77-b902-6e56b16f539a
   - id: kamikillerto.vscode-colorize

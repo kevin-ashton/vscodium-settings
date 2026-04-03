@@ -17,16 +17,16 @@
   // # Instance sidebar preview
   // ############################
 
-  //   {
-  //     "key": "down",
-  //     "command": "multiCommand.navigateExplorerDownAndPreviewFile",
-  //     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && listFocus && !inputFocus"
-  // },
-  // {
-  //     "key": "up",
-  //     "command": "multiCommand.navigateExplorerUpAndPreviewFile",
-  //     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && listFocus && !inputFocus"
-  // },
+    {
+      "key": "down",
+      "command": "multiCommand.navigateExplorerDownAndPreviewFile",
+      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && listFocus && !inputFocus"
+  },
+  {
+      "key": "up",
+      "command": "multiCommand.navigateExplorerUpAndPreviewFile",
+      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && listFocus && !inputFocus"
+  },
 
   // ############################
   // # Encrypt/Decrypt File
@@ -76,31 +76,6 @@
   {
     "key": "f3",
     "command": "emojisense.quickEmoji",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+k",
-    "command": "editor.action.insertSnippet",
-    "args": {
-      "name": "Insert ☑️"
-    },
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "cmd+i",
-    "command": "editor.action.insertSnippet",
-    "args": {
-      "name": "Insert ✅"
-    },
-    "when": "editorTextFocus"
-  },
-
-  // =================
-  // Random
-  // =================
-  {
-    "key": "ctrl+shift+alt+f12",
-    "command": "insertDateString.insertDateTime",
     "when": "editorTextFocus"
   },
 
@@ -229,12 +204,14 @@
   // NextTab
   {
     "command": "workbench.action.nextEditorInGroup",
-    "key": "ctrl+tab" // Note on Mac karabiner translates from ctrl+tab to ctrl+tab MACSPECIAL
+    "key": "ctrl+tab", // Note on Mac karabiner translates from ctrl+tab to ctrl+tab MACSPECIAL
+    "when": "!terminalFocus"
   },
   // PreviousTab
   {
     "command": "workbench.action.previousEditorInGroup",
-    "key": "ctrl+shift+tab" // Note on Mac karabiner translates from ctrl+tab to ctrl+tab MACSPECIAL
+    "key": "ctrl+shift+tab", // Note on Mac karabiner translates from ctrl+tab to ctrl+tab MACSPECIAL
+    "when": "!terminalFocus"
   },
 
   // ReopenClosedTab
@@ -336,6 +313,18 @@
   {
     "command": "workbench.action.terminal.focusNextPane",
     "key": "ctrl+'",
+    "when": "terminalFocus"
+  },
+    // Next Terminal
+  {
+    "command": "workbench.action.terminal.focusNext",
+    "key": "ctrl+tab", // Note on Mac karabiner translates from ctrl+tab to ctrl+tab MACSPECIAL
+    "when": "terminalFocus"
+  },
+  // Prev Terminal
+  {
+    "command": "workbench.action.terminal.focusPrevious",
+    "key": "shift+ctrl+tab", // Note on Mac karabiner translates from ctrl+tab to ctrl+tab MACSPECIAL
     "when": "terminalFocus"
   },
 

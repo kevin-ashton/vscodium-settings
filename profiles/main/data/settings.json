@@ -7,6 +7,10 @@
 
   // "editor.renderControlCharacters": true,
 
+
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  // "diffEditor.hideUnchangedRegions.contextLineCount": 10,
+
   // Allow you to select a folder without toggling it
   "workbench.list.openMode": "doubleClick",
 
@@ -341,10 +345,8 @@
   },
   "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
 
-  "peacock.vslsJoinColor": "#f9e64f",
-
   "prisma.showPrismaDataPlatformNotification": false,
-  "cSpell.enabled": false,
+  "cSpell.enabled": true,
   "explorer.confirmPasteNative": false,
   "redhat.telemetry.enabled": false,
   "git.openRepositoryInParentFolders": "never",
@@ -356,6 +358,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
@@ -422,7 +425,12 @@
 "workbench.colorTheme": "Default Light+",
 "[yaml]": {
   "editor.defaultFormatter": "esbenp.prettier-vscode"
-}
+},
+"[mdx]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"claudeCode.allowDangerouslySkipPermissions": true,
+"remote.autoForwardPortsSource": "hybrid"
 
   // Add some custom styles to markdown. Was playing with this when I was looking at using vsCode for the scriptures
   // See https://code.visualstudio.com/docs/getstarted/themes
