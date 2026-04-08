@@ -8,7 +8,7 @@
   // "editor.renderControlCharacters": true,
 
 
-  "diffEditor.hideUnchangedRegions.enabled": true,
+  // "diffEditor.hideUnchangedRegions.enabled": true,
   // "diffEditor.hideUnchangedRegions.contextLineCount": 10,
 
   // Allow you to select a folder without toggling it
@@ -430,7 +430,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 },
 "claudeCode.allowDangerouslySkipPermissions": true,
-"remote.autoForwardPortsSource": "hybrid"
+"remote.autoForwardPorts": false,
 
   // Add some custom styles to markdown. Was playing with this when I was looking at using vsCode for the scriptures
   // See https://code.visualstudio.com/docs/getstarted/themes
