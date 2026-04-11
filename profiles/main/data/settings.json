@@ -431,6 +431,7 @@
 },
 "claudeCode.allowDangerouslySkipPermissions": true,
 "remote.autoForwardPorts": false,
+"diffEditor.renderSideBySide": false,
 
   // Add some custom styles to markdown. Was playing with this when I was looking at using vsCode for the scriptures
   // See https://code.visualstudio.com/docs/getstarted/themes

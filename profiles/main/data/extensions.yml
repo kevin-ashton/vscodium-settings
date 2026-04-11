@@ -4,6 +4,8 @@ enabled:
     uuid: 3c13ae49-babe-45fe-8c48-5e45077a62bf
   - id: ardonplay.vscode-jetbrains-icon-theme
     uuid: 96b279e1-e30f-4d34-bad2-f1a5f5e314dc
+  - id: asispts.neo-git-graph
+    uuid: 7842730f-d1f9-4d81-bcb9-303eb8aa8663
   - id: astro-build.astro-vscode
     uuid: 1fbbc8b0-7432-4b7e-8774-3336151da2f3
   - id: bierner.emojisense
@@ -16,6 +18,8 @@ enabled:
     uuid: 583b2b34-2c1e-4634-8c0b-0b82e283ea3a
   - id: donjayamanne.githistory
     uuid: 5960f38e-0bbe-4644-8f9c-9c8824e82511
+  - id: eamodio.gitlens
+    uuid: 4de763bd-505d-4978-9575-2b7696ecf94e
   - id: EditorConfig.EditorConfig
     uuid: f60a60a6-95ba-42d4-b41c-3d24c1b89588
   - id: esbenp.prettier-vscode
@@ -36,14 +40,16 @@ enabled:
     uuid: 4f27872b-4421-4645-b5ee-7ae37ab67ae7
   - id: kevin-ashton.vsc-nanoid-snippets
     uuid: 5de841b5-b4f5-4977-997c-d2a806198e75
+  - id: KylinIDETeam.gitlens
+    uuid: 60f5f3c1-a693-4d84-907a-5315b79617a0
   - id: mathiasfrohlich.Kotlin
     uuid: d36bad53-910d-481a-a7ee-8992450665f6
   - id: matthewpi.caddyfile-support
     uuid: c1d1ec36-b62e-4046-b2e6-0e49df95a9f8
+  - id: onlineeric.speedy-git-ext
+    uuid: da272592-1935-4801-b5d9-b6483bc9a0a3
   - id: Prisma.prisma
     uuid: 33ce9d6b-41cf-4972-a62b-386f7201981d
-  - id: PutraAdiJaya.emoji-game-matcher
-    uuid: 40158729-c631-499d-96a8-1d3951d46f84
   - id: rebornix.toggle
     uuid: null
   - id: redhat.java
