@@ -4,12 +4,12 @@
   // - uncomment "Instance sidebar preview" in keyboard shortcuts
   //
 
-
   // "editor.renderControlCharacters": true,
 
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.hideUnchangedRegions.contextLineCount": 5,
 
-  // "diffEditor.hideUnchangedRegions.enabled": true,
-  // "diffEditor.hideUnchangedRegions.contextLineCount": 10,
+  "encryptFile.autoEncryptPatterns": ["**/*.file-encrypt.*"],
 
   // Allow you to select a folder without toggling it
   "workbench.list.openMode": "doubleClick",
@@ -19,20 +19,19 @@
   "multiCommand.commands": [
     {
       "command": "multiCommand.navigateExplorerDownAndPreviewFile",
-      "sequence": ["list.focusDown", "filesExplorer.openFilePreserveFocus"]
+      "sequence": ["list.focusDown", "filesExplorer.openFilePreserveFocus"],
     },
     {
       "command": "multiCommand.navigateExplorerUpAndPreviewFile",
-      "sequence": ["list.focusUp", "filesExplorer.openFilePreserveFocus"]
-    }
+      "sequence": ["list.focusUp", "filesExplorer.openFilePreserveFocus"],
+    },
   ],
 
   // I want vanilla zsh, not "smart" features
   "terminal.integrated.shellIntegration.enabled": false,
 
-
   "markdown.copyFiles.destination": {
-    "**/*": "images/${documentBaseName}/"
+    "**/*": "images/${documentBaseName}/",
   },
 
   "emmet.showExpandedAbbreviation": "never",
@@ -93,7 +92,7 @@
   "editor.quickSuggestions": {
     "comments": "on",
     "strings": "on",
-    "other": "on"
+    "other": "on",
   },
   "editor.renderWhitespace": "none",
   // Always use the json version of the settings
@@ -117,7 +116,7 @@
     "**/node_modules": true,
     "**/bower_components": true,
     "**/Pods": true,
-    "**/dist/**": true
+    "**/dist/**": true,
   },
 
   // Line endings
@@ -144,7 +143,7 @@
     "**/*.js.map": true,
     "**/*.ts.map": true,
     // "**/*.d.ts": true,
-    "**/yarn-error.log": true
+    "**/yarn-error.log": true,
   },
 
   // Peacock settings
@@ -153,75 +152,73 @@
   "peacock.favoriteColors": [
     {
       "name": "Angular Red",
-      "value": "#dd0531"
+      "value": "#dd0531",
     },
     {
       "name": "Azure Blue",
-      "value": "#007fff"
+      "value": "#007fff",
     },
     {
       "name": "JavaScript Yellow",
-      "value": "#f9e64f"
+      "value": "#f9e64f",
     },
     {
       "name": "Mandalorian Blue",
-      "value": "#1857a4"
+      "value": "#1857a4",
     },
     {
       "name": "Node Green",
-      "value": "#215732"
+      "value": "#215732",
     },
     {
       "name": "React Blue",
-      "value": "#61dafb"
+      "value": "#61dafb",
     },
     {
       "name": "Something Different",
-      "value": "#832561"
+      "value": "#832561",
     },
     {
       "name": "Svelte Orange",
-      "value": "#ff3d00"
+      "value": "#ff3d00",
     },
     {
       "name": "Vue Green",
-      "value": "#42b883"
+      "value": "#42b883",
     },
     {
       "name": "Auth0 Orange",
-      "value": "#eb5424"
+      "value": "#eb5424",
     },
     {
       "name": "C# Purple",
-      "value": "#68217A"
+      "value": "#68217A",
     },
     {
       "name": "Gatsby Purple",
-      "value": "#639"
+      "value": "#639",
     },
     {
       "name": "Go Cyan",
-      "value": "#5dc9e2"
+      "value": "#5dc9e2",
     },
     {
       "name": "Java Blue-Gray",
-      "value": "#557c9b"
-    }
+      "value": "#557c9b",
+    },
   ],
 
   "editor.semanticTokenColorCustomizations": {
     "enabled": true,
     "rules": {
-      "*.deprecated": { "strikethrough": false, "foreground": "#9aa0a6" } // dim, no line
-    }
+      "*.deprecated": { "strikethrough": false, "foreground": "#9aa0a6" }, // dim, no line
+    },
   },
 
   // "editor.suggestOnTriggerCharacters": false,
   // Get rid of annoying autocomplete when you type `if` and then goes to `ifStatement()`
   //https://stackoverflow.com/questions/32911977/prevent-autocomplete-in-visual-studio-code
   "editor.acceptSuggestionOnCommitCharacter": false,
-
-
 
   "typescript.updateImportsOnFileMove.enabled": "never",
   "javascript.updateImportsOnFileMove.enabled": "never",
@@ -230,12 +227,11 @@
   "workbench.colorCustomizations": {
     "[Blue Light Theme]": {
       "editorError.foreground": "#f14949",
-      "terminal.ansiRed": "#b73c3c"
+      "terminal.ansiRed": "#b73c3c",
 
       // "editor.wordHighlightBackground": "#fff200"
-    }
+    },
   },
-
 
   "editor.tokenColorCustomizations": {
     "[Default Light+]": {
@@ -245,39 +241,39 @@
           "scope": "markup.bold",
           "settings": {
             "foreground": "#e13416",
-            "fontStyle": "underline"
-          }
+            "fontStyle": "underline",
+          },
         },
         {
           "scope": "markup.italic",
           "settings": {
             "foreground": "#1198e7",
-            "fontStyle": ""
-          }
+            "fontStyle": "",
+          },
         },
         {
           "scope": "markup.heading",
           "settings": {
             "foreground": "#e2a807",
-            "fontStyle": ""
-          }
+            "fontStyle": "",
+          },
         },
 
         {
           "scope": "markup.quote",
           "settings": {
             "foreground": "#2cc77c",
-            "fontStyle": ""
-          }
+            "fontStyle": "",
+          },
         },
         {
           "scope": "markup.strikethrough.markdown",
           "settings": {
             "foreground": "#aca83f",
-            "fontStyle": ""
-          }
-        }
-      ]
+            "fontStyle": "",
+          },
+        },
+      ],
     },
     "[Default Dark Modern]": {
       "textMateRules": [
@@ -286,40 +282,40 @@
           "scope": "markup.bold",
           "settings": {
             "foreground": "#ff7777",
-            "fontStyle": "underline"
-          }
+            "fontStyle": "underline",
+          },
         },
         {
           "scope": "markup.italic",
           "settings": {
             "foreground": "#5eb9ee",
-            "fontStyle": ""
-          }
+            "fontStyle": "",
+          },
         },
         {
           "scope": "markup.heading",
           "settings": {
             "foreground": "#f3d37c",
-            "fontStyle": ""
-          }
+            "fontStyle": "",
+          },
         },
 
         {
           "scope": "markup.quote",
           "settings": {
             "foreground": "#69ca9b",
-            "fontStyle": ""
-          }
+            "fontStyle": "",
+          },
         },
         {
           "scope": "markup.strikethrough.markdown",
           "settings": {
             "foreground": "#676533",
-            "fontStyle": ""
-          }
-        }
-      ]
-    }
+            "fontStyle": "",
+          },
+        },
+      ],
+    },
   },
 
   "javascript.preferences.importModuleSpecifier": "relative",
@@ -327,12 +323,12 @@
   "search.showLineNumbers": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
+    "editor.defaultFormatter": "octref.vetur",
   },
   "files.associations": {
     "*.plist": "xml",
     "*.txt": "markdown",
-    "*.yml ": "yaml"
+    "*.yml ": "yaml",
   },
 
   "editor.accessibilitySupport": "off",
@@ -341,48 +337,45 @@
   "hediet.vscode-drawio.resizeImages": null,
   "workbench.statusBar.visible": true,
   "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
 
   "prisma.showPrismaDataPlatformNotification": false,
   "cSpell.enabled": true,
   "explorer.confirmPasteNative": false,
   "redhat.telemetry.enabled": false,
-  "git.openRepositoryInParentFolders": "never",
   "[plaintext]": {
     "editor.unicodeHighlight.ambiguousCharacters": false,
-    "editor.unicodeHighlight.invisibleCharacters": false
+    "editor.unicodeHighlight.invisibleCharacters": false,
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
-
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "sshfs.configs": [
     {
       "name": "api-prod-staging",
       "privateKeyPath": "/Users/kevin/.ssh/id_rsa",
       "username": "root",
-      "host": "3.150.58.70"
+      "host": "3.150.58.70",
     },
     {
       "name": "roo-pipe",
       "privateKeyPath": "/Users/kevin/.ssh/id_rsa",
       "username": "root",
-      "host": "3.135.190.89"
-    }
+      "host": "3.135.190.89",
+    },
   ],
   "window.newWindowProfile": "Default",
   "[dockercompose]": {
@@ -392,15 +385,15 @@
     "editor.quickSuggestions": {
       "other": true,
       "comments": false,
-      "strings": true
+      "strings": true,
     },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   // Tweak AI
   "update.showReleaseNotes": false,
@@ -415,23 +408,30 @@
   "cSpell.enabledNotifications": {
     "Average Word Length too Long": false,
     "Lines too Long": false,
-    "Maximum Word Length Exceeded": false
+    "Maximum Word Length Exceeded": false,
   },
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
-"workbench.settings.showAISearchToggle": false,
-"claudeCode.preferredLocation": "panel",
-"workbench.colorTheme": "Default Light+",
-"[yaml]": {
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"[mdx]": {
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-},
-"claudeCode.allowDangerouslySkipPermissions": true,
-"remote.autoForwardPorts": false,
-"diffEditor.renderSideBySide": false,
+  "workbench.settings.showAISearchToggle": false,
+  "claudeCode.preferredLocation": "panel",
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "claudeCode.allowDangerouslySkipPermissions": true,
+  "remote.autoForwardPorts": false,
+  "diffEditor.renderSideBySide": false,
+  "markdown-checkbox.checkmark": "x",
+  "markdown-checkbox.dateWhenChecked": false,
+  "markdown-checkbox.italicWhenChecked": false,
+  "markdown-checkbox.showStatusBarItem": false,
+  "markdown-checkbox.typeOfBulletPoint": "-",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-auto",
+  "workbench.colorTheme": "Light Modern",
 
   // Add some custom styles to markdown. Was playing with this when I was looking at using vsCode for the scriptures
   // See https://code.visualstudio.com/docs/getstarted/themes
