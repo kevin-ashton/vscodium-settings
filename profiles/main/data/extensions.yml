@@ -47,8 +47,8 @@ enabled:
     uuid: da272592-1935-4801-b5d9-b6483bc9a0a3
   - id: Prisma.prisma
     uuid: 33ce9d6b-41cf-4972-a62b-386f7201981d
+    version: 31.5.35
   - id: rebornix.toggle
-    uuid: null
   - id: redhat.java
     uuid: 198a707e-28af-4e84-8610-6e2f628dd12d
   - id: redhat.vscode-yaml

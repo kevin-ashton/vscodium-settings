@@ -300,11 +300,11 @@
     "key": "cmd+n",
     "when": "terminalFocus"
   },
-  {
-    "command": "workbench.action.terminal.kill",
-    "key": "cmd+w",
-    "when": "terminalFocus"
-  },
+  // {
+  //   "command": "workbench.action.terminal.kill",
+  //   "key": "cmd+w",
+  //   "when": "terminalFocus"
+  // },
   {
     "command": "workbench.action.terminal.split",
     "key": "ctrl+shift+alt+'",
@@ -1127,6 +1127,10 @@
     "key": "f5",
     "command": "-debug.openView",
     "when": "!debuggersAvailable"
+  },
+  {
+    "key": "alt+cmd+q",
+    "command": "workbench.action.toggleMaximizedPanel"
   },
 
 ]
